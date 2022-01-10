@@ -1,0 +1,76 @@
+.form {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  width: 427px;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+
+  &__wrapper {
+    width: 600px;
+    margin: 10px auto;
+    border-radius: 20px;
+    background: rgb(176, 214, 224);
+    background: linear-gradient(
+      90deg,
+      rgba(176, 214, 224, 0.5690651260504201) 31%,
+      rgba(199, 230, 238, 0.5382528011204482) 60%,
+      rgba(172, 220, 235, 0.5662640056022409) 81%
+    );
+
+    padding: 10px;
+  }
+
+  &__input {
+    width: 423px;
+    margin: 22px -91px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-top: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: "Courier New", Courier, monospace;
+    background: rgb(255, 255, 255);
+    transition: background 0.2s;
+  }
+
+  &__input:hover {
+    background: rgb(241, 241, 241);
+  }
+
+  &__input-submit {
+    border: 1px solid transparent;
+    color: white;
+    background: #2e71c3;
+    padding: 12px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, border 0.3s, color 0.3s;
+    text-transform: uppercase;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  &__input-submit:hover {
+    border: 1px solid #2e71c3;
+    background: white;
+    color: #2e71c3;
+  }
+
+  &__input-wrap {
+    position: relative;
+  }
+
+  &__input-error {
+    font-size: 10px;
+    color: #db4040;
+    font-family: sans-serif;
+    position: absolute;
+    top: 41px;
+    right: -66px;
+    text-transform: uppercase;
+  }
+}

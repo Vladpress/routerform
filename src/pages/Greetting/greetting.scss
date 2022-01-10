@@ -1,0 +1,54 @@
+.greetting {
+  font-family: sans-serif;
+  &__box {
+    width: 600px;
+    border: 1px solid #68cfe596;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #9fd3c74a;
+    border-radius: 10px;
+  }
+
+  &__submit {
+    border: 1px solid transparent;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+    background: #2e71c3;
+    padding: 12px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    transition: background 0.3s, border 0.3s, color 0.3s;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  &__main-text {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  &__hint {
+    background: #75a5e0;
+  }
+
+  &__hint:hover {
+    border: 1px solid #75a5e0;
+    background: gray;
+    color: #75a5e0;
+  }
+  &__but-wrap {
+    display: flex;
+  }
+
+  &__submit:hover {
+    border: 1px solid #2e71c3;
+    background: transparent;
+    color: #2e71c3;
+  }
+}
